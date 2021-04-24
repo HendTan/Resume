@@ -1,0 +1,312 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.navbar{
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0px;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s linear;
+}
+.inner-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 40px;
+}
+.navbar .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 44px;
+    height: 32px;
+    background-image: url(../images/white-logo.png);
+    background-size: contain;
+}
+.menu-toogler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+.menu-toogler span{
+    display: block;
+    height: 3px;
+    background: white;
+    margin: 6px 0px;
+    position: relative;
+    transition: 0.5s linear; 
+}
+.navbar-menu a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.5s linear;
+}
+.navbar-menu a:hover{
+    color: lightskyblue ;
+}
+.sticky{
+    background-color: white;
+    padding: 18px 0px;
+}
+.sticky .logo{
+    background-image: url(../images/black-logo.png);
+}
+.sticky .navbar-menu a{
+    color: black;
+}
+.sticky .menu-toogler span{
+    background-color: black;
+}
+#home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(../images/IMG_20190312_073641.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+#home .content{
+    width: 100%;
+}
+#home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+#home .content h1:after{
+    content: 'Hend Tan Yi Hen';
+    margin: 10px;
+    animation: textanim 10s linear infinite;
+}
+@keyframes textanim{
+    25%{
+        content: '18 Years Old';
+    }
+    50%{
+        content: 'IGCSE Certificate Holder';
+    }
+    75%{
+        content: 'A Fast Learner ';
+    }
+}
+
+#home .buttons{
+    margin-top: 60px;
+}
+#home .buttons a{
+    display: inline-block;
+    margin: 15px 30px;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    width: 200px;
+    border: 2px solid;
+    border-radius: 6px;
+    transition: 0.5s linear;
+}
+#home .buttons a:hover{
+    background-color: #1e2a79;
+    color:whitesmoke;
+    border: none;
+}
+
+
+#summary{
+    color: #edf5e1;
+    background-color: #353b48;
+    height: 160px;
+}
+
+#summaryIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+ion-icon{
+    font-size: 40px;
+}
+#summaryContent{
+    text-align: center;
+    margin: auto;
+}
+
+
+#education{
+    margin: 10px;
+    text-align: center;
+}
+#educationIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#skills{
+    background-color: #353b48;
+    color: #edf5e1;
+    margin-top: 30px;
+    height: auto;
+}
+#skills #skillsIcon{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#skills #working table{
+display: flex;
+justify-content: center;
+}
+
+#skills #working th, #skills #working td{
+    width: 300px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+#skills #working table tr td ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#language{
+    margin-top: 10px;
+    height: auto;
+}
+#languageIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.languagesContainer > h3{
+    text-align: center;
+    margin: 30px;
+}
+.languageContainer{
+    width: 50%;
+    height: 10px;
+    background-color: #5cdb95;
+    margin:auto;
+    border-radius: 20px;
+}
+.languageMandarin{
+    width: 100%;
+    height: 10px;
+    background-color: #05386b;
+    border-radius: 20px;
+}
+.languageEnglish{
+    width: 80%;
+    height: 10px;
+    background-color: #05386b;
+    border-radius: 20px;
+}
+.languageBahasa{
+    width: 60%;
+    height: 10px;
+    background-color: #05386b;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 980px){
+    .menu-toogler{
+        display: block;
+    }
+
+    #home .content h1{
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    .navbar-menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #353b48;
+        top: 0px;
+        right: -100%;
+        max-width: 400px;
+        padding: 80px 50px;
+        transition: 0.5s linear;
+    }
+    .navbar-menu a{
+        display: block;
+        font-size: 30px;
+        font-weight: 500;
+        margin: 30px 0px;
+    }
+    .sticky .navbar-menu{
+        background-color:white;
+    }
+    .sticky .navbar-menu a:hover{
+        color: lightskyblue;
+    }
+    .navbar-menu.active{
+        transition: 0.5s linear;
+        right: 0;
+    }
+    .menu-toogler.active span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 4px;
+    }
+    .menu-toogler.active span:nth-child(2){
+        opacity: 0;
+    }
+    .menu-toogler.active span:nth-child(3){
+        transform: rotate(45deg);
+        bottom: 14px;
+    }
+
+    #summary{
+        font-size: 18px;
+        height: auto;
+    }
+
+    #education{
+     font-size: 18px;   
+    }
+
+    #skills #working table{
+        display: flex;
+        justify-content: center;
+        font-size: 18px;    
+    }
+
+    #skills #skillsIcon{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+    #languageIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+}
