@@ -144,8 +144,9 @@
 #skills{
     color: #edf5e1;
     background-color: #353b48;
-    height: 100vh;
+    height: auto;
 }
+
 
 #skillsIcon{
     display: flex;
@@ -169,7 +170,7 @@ ion-icon{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 40vw;
+    width: 20vw;
     margin: auto;
 }
 
@@ -215,7 +216,7 @@ ion-icon{
 }
 
 #softwareSkill{
-    height: 100vh;
+    height: auto;
     background-color: whitesmoke;
     padding-top: 5px;
 }
@@ -230,7 +231,7 @@ ion-icon{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 50vw;
+    width: 30vw;
     margin: auto;
 }
 
@@ -252,7 +253,7 @@ ion-icon{
 
 
 #working{
-    height: 100vh;
+    height: auto;
     background-color: #353b48;
 }
 
@@ -319,17 +320,15 @@ ion-icon{
     font-size: 20px;
 }
 
-
-
 #education #educationBackgrounds .educationBackground{
     width: 50vw;
     border: 1px solid black;
-    margin: 10px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #353b48;
     color: #edf5e1;
     font-size: 18px;
+    margin: auto;
 }
 
 #education #educationBackgrounds .educationBackground .educationContent h4{
@@ -434,6 +433,7 @@ ion-icon{
 
     #skillsContent .skills{
         margin: auto;
+        width: 170px;
     }
 
     #skillsContent .skills .skill{
@@ -467,6 +467,7 @@ ion-icon{
     #education #educationIcon{
         font-size: 15px;
     }
+
 
     #education #educationBackgrounds .educationBackground{
         width: auto;
